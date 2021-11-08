@@ -4,7 +4,6 @@ import './index.css';
 
 const Button = (props) => {
   // console.log(props)
-  
   const resetHandler = props.reset
 
   return (
@@ -17,8 +16,8 @@ const Application = () => {
   const [name, setName] = useState("");
 
   const reset = () => {
-    console.log("reset");
-    // your code here
+    // console.log("reset");
+    setName("")
   };
 
   return (
