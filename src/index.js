@@ -27,7 +27,7 @@ const Application = () => {
       onChange={(event) => {setName(event.target.value)}}
       placeholder="Type Your Name" />
       <Button reset={reset}>Reset</Button>
-      <h1>Hello {name}</h1>
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
